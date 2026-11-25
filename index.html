@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a1120"><meta name="description" content="FE Civil Prep - source-book questions, worked explanations, and question export."><title>FE Civil Prep | Custom Practice & Timed Exams</title><link rel="stylesheet" href="./styles.css"></head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-icon">FE</div><div><strong>FE Civil Prep</strong><small>Your engineering study space</small></div></div>
+    <div class="nav-heading">STUDY SPACE</div>
+    <nav id="nav" aria-label="Main navigation">
+      <button data-view="home" class="active"><span class="ico">⌂</span> Dashboard</button>
+      <button data-view="library"><span class="ico">▦</span> Question library</button>
+      <button data-view="practice"><span class="ico">✎</span> Practice questions</button>
+      <button data-view="exams"><span class="ico">◷</span> Timed exams</button>
+      <button data-view="subjects"><span class="ico">◎</span> Study by subject</button>
+      <button data-view="books"><span class="ico">▤</span> Original books + diagrams</button>
+      <button data-view="progress"><span class="ico">▥</span> My progress</button>
+    </nav>
+    <div class="nav-heading">YOUR LIBRARY</div>
+    <nav><button data-view="bookmarks"><span class="ico">☆</span> Bookmarks</button><button data-view="reports"><span class="ico">⚑</span> Mistake reports</button><button data-view="about"><span class="ico">⚙</span> Settings & info</button></nav>
+    <div class="side-bottom"><i class="live-dot"></i> Your progress stays in your browser<small>No account required</small></div>
+  </aside>
+  <div class="main-panel">
+    <header class="top"><div class="top-left"><button class="mobile-menu" id="menuButton" title="Toggle navigation">☰</button><div class="mobile-mark">FE</div><span id="breadcrumb">Dashboard</span></div><div class="top-right"><span class="pill">CUSTOM PRACTICE</span><button id="quickNew" class="tiny-icon" title="Start practice">＋</button></div></header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+</div>
+<nav class="mobile-tabs"><button data-view="home">⌂<span>Home</span></button><button data-view="library">▦<span>Library</span></button><button data-view="practice">✎<span>Practice</span></button><button data-view="progress">▥<span>Progress</span></button></nav>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" onerror="window.PDFJS_FAILED=true"></script><script src="./scan_manifest.js"></script><script src="./jszip.min.js"></script><script src="./questions.js"></script><script src="./exam_topic_matches.js"></script><script src="./diagrams.js"></script><script src="./app.js"></script>
+</body></html>
